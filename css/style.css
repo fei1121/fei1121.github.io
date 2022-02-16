@@ -15,10 +15,13 @@ button{
     font-weight:300;
     color:sandybrown;
     text-align:center;
-    transition: all 0.2s;
     display:block;
     margin:0.4cm auto;
 }
+button:hover{
+    color:#8189da;
+    background-color:#eca295;
+    }
 a{
     text-decoration:none;
 }
