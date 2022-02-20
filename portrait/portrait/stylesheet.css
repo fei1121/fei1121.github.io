@@ -1,0 +1,165 @@
+h1{
+    text-align: center;
+    font-family: 'Hachi Maru Pop', cursive;
+    color: rgb(214, 148, 245);
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#bfe7f1,#e8baf5)
+  }
+.hair{
+   padding: 10px;
+    width: 300px;
+    height: 370px;
+    background: black;
+    border-radius: 150px 150px  0 0;
+    position: absolute;
+    left: 40%
+}
+.head{
+    padding: 10px;
+    width: 250px;
+    height: 270px;
+    background: rgb(250, 219, 184);
+    border-radius: 200px / 150px;
+    position: absolute;
+    left: 7%;
+  }
+.leftframeblack{
+    left: 22%;
+    position: absolute;
+    top: 35%;
+    background: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.rightframeblack{
+  left: 54%;
+  position: absolute;
+  top: 35%;
+  background: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.leftlen{
+  left: 13%;
+  position: absolute;
+  top: 15%;
+  background: rgb(250, 219, 184);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.rightlen{
+  left: 14%;
+  position: absolute;
+  top: 15%;
+  background: rgb(250, 219, 184);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.glassesconnector{
+  left: 49%;
+  position: absolute;
+  top: 48%;
+  background: black;
+  width: 20px;
+  height: 10px;
+  border-radius: 0%;
+}
+
+.lefteye1{
+  left: 28%;
+  position: absolute;
+  top: 34%;
+  background: black;
+  width: 8px;
+  height: 30px;
+  border-radius: 10px;
+  transform: rotate(58deg);
+}
+.lefteye2{
+  left: 52%;
+  position: absolute;
+  top: 34%;
+  background: black;
+  width: 8px;
+  height: 30px;
+  border-radius: 10px;
+  transform: rotate(-58deg);
+}
+
+.righteye1{
+  left: 28%;
+  position: absolute;
+  top: 34%;
+  background: black;
+  width: 8px;
+  height: 30px;
+  border-radius: 10px;
+  transform: rotate(58deg);
+}
+.righteye2{
+  left: 52%;
+  position: absolute;
+  top: 34%;
+  background: black;
+  width: 8px;
+  height: 30px;
+  border-radius: 10px;
+  transform: rotate(-58deg);
+}
+.mouth{
+  left: 25%;
+  position: absolute;
+  top: 70%;
+  width: 140px;
+  height: 50px;
+  border-radius: 0 0 150px 150px;
+  background-color: hsl(332, 66%, 69%);
+}
+.sidebang1{
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  border-radius:150px 150px  0 0 ;
+  background-color: black;
+  transform: translate(-30px,0px) rotate(-28deg);
+}
+.sidebang2{
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  border-radius:150px 150px  0 0 ;
+  background-color: black;
+  transform: translate(90px,0px) rotate(28deg);
+}
+.clothing {
+  top: 89%;
+  left:30%;
+  width: 200px;
+  height: 150px;
+  overflow: hidden; /*crops the image */
+  transform: translate(20px,280px);
+}
+
+.clothing img {
+  width: 400px; /*makes sure the shirt is at the center*/
+  margin: -75px 0 0 -100px; /*makes sure the shirt is at the center*/
+}
+
+img.tandonshirt{
+  position: absolute;
+  top: 0; /*makes sure the newshirt is centered*/
+  left: 0; /*makes sure the newshirt is centered*/
+  opacity: 0;
+}
+.clothing:hover img{
+  opacity: 0; /*transparent tandonshirt*/
+}
+.clothing:hover img.tandonshirt{
+  opacity: 1; /*NOT transparent tandonshirt*/
+}
