@@ -1,0 +1,17 @@
+body{
+    background-color: aquamarine;
+}
+h3{
+    font-family: Hachi Maru Pop;
+    font-size: 35px;
+}
+
+a{
+    color: #176951;
+    font-size: 36px;
+    text-decoration: none;
+    border: 3px dotted black;
+    margin: 4px;
+    padding: 4px;
+   
+}

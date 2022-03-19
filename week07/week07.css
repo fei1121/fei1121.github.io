@@ -1,0 +1,140 @@
+
+body{
+    background-color: #030303;
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 500px 300px;
+}
+.wall{
+    background-color: #f7db9f;
+}
+.door img{
+ position:absolute;
+ top: 31%;
+ left: 42%;
+ height: auto;
+ width: 250px;
+ cursor: pointer;
+ 
+}
+img.dooropen{
+    position: absolute;
+    top: 31%; /*makes sure the door is centered*/
+    left: 42%; 
+    opacity: 0;
+  }
+  .door:hover img{
+    opacity: 0; /*transparent tandonshirt*/
+  }
+  .door:hover img.dooropen{
+    opacity: 1; /*NOT transparent tandonshirt*/
+  }
+h3{
+    position: absolute;
+    left: 42%;
+    top: 25%;
+}
+
+.couch img{
+    position:absolute;
+    top: 47.6%;
+    left: 5%;
+    height: auto;
+    width: 450px;
+   }
+.cabinet img{
+    position:absolute;
+    top: 47.6%;
+    left: 68%;
+    height: 200px;
+    width: 250px;
+   }
+.floor{
+    background-color: #e4b59f;
+} 
+.hero{
+    display: flex; 
+    width: 300px;
+    height: 250px;
+    flex-wrap: wrap;
+    margin: 30px 130px;
+    background: rgb(188, 212, 240);
+}
+.small-img{
+    flex-basis: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: 2s;
+}
+.small-img img{
+    width: 100px;
+}
+.small-img::after{
+    content:"";
+    width: 100px;
+    height:30px;
+    bottom: -29px;
+    left:7px;
+    position:absolute;
+    background: #9c855e;
+    transform: skewX(26deg)
+}
+.small-img::before{
+    content:"";
+    width: 15px;
+    height:120px;
+    bottom: -15px;
+    left:100px;
+    position:absolute;
+    background: #857253;
+    transform: skewY(65deg)
+}
+.hero:hover .small-img:nth-child(1){
+    transform: translate(290px, -20px) rotate(360deg)
+}
+.hero:hover .small-img:nth-child(2){
+    transform: translate(-100px, -150px) rotate(360deg)
+}
+.hero:hover .small-img:nth-child(3){
+    transform: translate(70px, 120px) rotate(360deg)
+}
+.hero:hover .small-img:nth-child(4){
+    transform: translate(-125px, -100px) rotate(360deg)
+}
+.hero:hover .small-img:nth-child(5){
+    transform: translate(-185px, 30px) rotate(-360deg)
+}
+.hero:hover .small-img:nth-child(6){
+    transform: translate(-60px, -225px) rotate(270deg)
+}
+.quote{
+    position: absolute;
+    display: flex; 
+    top: -22%;
+    left: 60%;
+    width: 300px;
+    height: 250px;
+    margin: 330px 130px;
+    background: rgb(44, 107, 179);
+    border: #030303 solid 10px;
+}
+.quote{
+    text-align: center;
+    animation: words 5s infinite;
+}
+@keyframes words{
+0% {margin-left:100px}
+10% {margin-left:80px}
+20% {margin-right:100px}
+30% {margin-left:80px}
+40% {margin-right:100px}
+50% {margin-left:85px}
+60% {margin-right:100px}
+70% {margin-left:80px} 
+80% {margin-right:100px}
+90% {margin-left:80px}
+100% {margin-right:100px}
+}

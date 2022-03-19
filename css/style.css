@@ -20,8 +20,5 @@ button{
 }
 button:hover{
     color:#8189da;
-    background-color:#eca295;
-    }
-a{
-    text-decoration:none;
-}
+    background-color:#eca295;}
+a{text-decoration:none;}
