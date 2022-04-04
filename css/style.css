@@ -17,6 +17,7 @@ button{
     text-align:center;
     display:block;
     margin:0.4cm auto;
+    background-color: transparent;
 }
 button:hover{
     color:#8189da;
