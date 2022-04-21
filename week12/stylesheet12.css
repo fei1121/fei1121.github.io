@@ -1,0 +1,50 @@
+main{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    border-top: 3px solid black;
+  }
+body{
+    background-color: beige
+  }
+a {
+      color: rgb(0, 0, 0);
+      font-size: 14pt;
+      text-decoration: none;
+      font-family: 'Fredoka One', cursive;
+      border: 2px solid;
+      padding: 3px;
+  }
+  
+  #title{
+      font-family: 'Balsamiq Sans', cursive;
+      font-weight: bold;
+      font-size: 50px;
+      border: 10px dashed rgb(167, 134, 74);
+  }
+  p{
+      font-size: 30px;
+  }
+  
+  #text1{
+      font-size: 25px;
+      margin-left: 20vw;
+      margin-right: 20vw;
+      margin-top: 80px;
+  }
+
+  .container{
+      width: 915px;
+      height: 610px;
+      border: 3px solid black;
+      margin: 0 auto;
+  }
+  .col{
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      background-color: rgb(230, 211, 171);
+      float: left;
+      text-align: center;
+      padding: 40px;
+      margin: 10px;
+  }
