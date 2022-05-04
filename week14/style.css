@@ -1,0 +1,225 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(meteor.jpg);
+}
+
+.name {
+  color: #e7d17c;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: normal;
+  text-align: center;
+  font-size: 40px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #e7bd64;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 275px;
+  width: 225px;
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.card.visible .card-front {
+  transform: rotateY(0); 
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 2s linear infinite 500ms;
+}
+
+.card-back {
+  background-color: rgb(145, 167, 224);
+  border-color: #fbef92;
+  transform: rotateY(0); 
+}
+
+.cob-web {
+  position: absolute;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  width: 65px;
+  height: 65px;
+}
+
+.card-face:hover .cob-web {
+  width: 70px;
+  height: 70px;
+}
+
+.cob-web-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.cob-web-top-right {
+  top: 0;
+  right: 0;
+}
+
+.cob-web-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.cob-web-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.symbol {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 68%;
+  height: 65%;
+  align-self: center;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+}
+
+.card-back:hover .symbol {
+  transform: translateY(0);
+}
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.card-front {
+  background-color: #ecda9f;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #0b2044;
+  font-family: 'Press Start 2P', cursive;
+  transition: background-color 500ms, font-size 100ms;
+}
+
+.overlay-text-small {
+  font-size: 25px;
+}
+
+.overlay-text.visible {
+  display: flex;
+  font-size: 35px;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(-25deg)
+  }
+  75% {
+    transform: rotate(25deg)
+  }
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(241, 232, 232, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(187, 193, 228, 0.8);
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto)
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+a{
+  text-decoration: none;
+}
+button{
+  display:inline-block;
+  padding: 0.30cm 1.7cm;
+  border:0.05cm solid rgb(51, 75, 177);
+  margin:0 0.3cm 0.3cm 0;
+  border-radius:0.3cm;
+  box-sizing: border-box;
+  font-size: 19px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight:300;
+  color:rgb(44, 75, 198);
+  text-align:center;
+  display:block;
+  margin:0.4cm auto;
+  background-color: transparent;
+}
+button:hover{
+  color:#c3c5db;
+  background-color:#725ee3;}

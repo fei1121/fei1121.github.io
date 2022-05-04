@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name = “viewport” content=”width=device-width, initial-scale = 1.0”>
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title> Final Project</title>
+     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+     <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="name">Tarot Card Memory Game</h1>
+    <div class="overlay-text visible">
+      Remember your FIRST matching pair! </br>
+      <h3>Click to Start</h3>
+    </div>
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+      <h3>Yay!!! You Won!</h3>
+      Check the meaning of your FIRST matching pair! </br>
+      <p><a href = "homeindex.html"> 
+        <button>Check what your first matching pair means</button> </a> </p>
+      <span class="overlay-text-small">Or...Click to RePLAY</span>
+    </div>
+  
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">
+          Time <span id="time-remaining">100</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="sun.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="sun.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="sun3.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="sun3.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="apple.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="apple.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="wine.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="wine.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="chariot.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="chariot.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="lovers.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="lovers.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="strength.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="strength.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="wheel.png">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="symbol" src="shield.png">
+        </div>
+        <div class="card-front card-face">
+          <img class="cob-web cob-web-top-left" src="floral.png">
+          <img class="cob-web cob-web-top-right" src="floral.png">
+          <img class="cob-web cob-web-bottom-left" src="floral.png">
+          <img class="cob-web cob-web-bottom-right" src="floral.png">
+          <img class="card-value" src="wheel.png">
+        </div>
+      </div>
+    </div>
+  
+  </body>
+<script src="final.js"></script>
+</html>
+
