@@ -1,0 +1,77 @@
+{ 
+  "landingContent": {
+    "title": "✶ Welcome to the World of Idols ✶",
+    "intro": "You are entering the world into showbiz and congratulations on making it through all the trainee era!! You are officially a Kpop Idol and...",
+    "description": "Are you curious in finding out what life will be like if you are an IDOL? This quiz allows you to explore the show business and dive into the IDOL experience.",
+    "startButtonText": "Start"
+  },
+ 
+  "questions": [
+    {
+      "id": "creativity",
+      "text": "First thing's first you can’t debut without a hidden talent to impress fans…What will be your secret talent to impress fans?",
+      "type": "single-select",
+      "options": [
+        {"text": "Voice acting of an animated character", "traits": {"N": 1}},
+        {"text": "Playing a music instrument", "traits": {"N": 1}},
+        {"text": "Think of a flexible arm muscle skill on the spot", "traits": {"P": 1}},
+        {"text": "Cracking nut with your biceps", "traits": {"S": 1}}
+      ]
+    },
+    {
+      "id": "fan_service",
+      "text": "What will you do if you see a fan on the street?",
+      "type": "single-select",
+      "options": [
+        {"text": "Give them a selfie polaroid and sign on it", "traits": {"N": 1}},
+        {"text": "Give them an autograph with a heart", "traits": {"F": 1}},
+        {"text": "Take 20 pictures with them at every angle", "traits": {"E": 1}},
+        {"text": "Buy them a coffee", "traits": {"F": 1}}
+      ]
+    },
+    {
+      "id": "pr",
+      "text": "Your group and you are ready to perform for the next come back. HOWEVER, right before the show begins, there is a scandal that broke out between you and another idol. What would you do?",
+      "type": "single-select",
+      "options": [
+        {"text": "Continue thinking about it for the whole show.", "traits": {"F": 1}},
+        {"text": "Call your partner and initate a break up.", "traits": {"F": 1}},
+        {"text": "Do a live stream before the show to calm fans down", "traits": {"E": 1}},
+        {"text": "Joke about it to cover it up", "traits": {"E": 1}}
+      ]
+    },
+    {
+      "id": "new_song",
+      "text": "Time flies, and people start to forget but you still have to promote your group’s new songs. Who would you pick to do a challenge with?",
+      "type": "single-select",
+      "options": [
+        {"text": "Your group members", "traits": {"P": 1}},
+        {"text": "IDOLS from the same company", "traits": {"S": 1}},
+        {"text": "Do one by yourself", "traits": {"I": 1}}
+      ]
+    },
+    {
+      "id": "practice_schedule",
+      "text": "The comeback was successful and you now have to prepare for your concerts… How will you schedule your practice?",
+      "type": "single-select",
+      "options": [
+        {"text": "Once a day so you can post on social media", "traits": {"P": 1}},
+        {"text": "Go when a member calls you", "traits": {"P": 1}},
+        {"text": "Practice 3 times a day to make sure you conquer every detail", "traits": {"J": 1}},
+        {"text": "Practice under pressure because that's the only time you can work", "traits": {"J": 1}}
+      ]
+    },
+    {
+      "id": "music_show battle",
+      "text": "After a series of practice, you are now ready to perform in a music bank show. You found out that your group is up against a senior. You lost against your sunbae by 50 points. How would you react?",
+      "type": "single-select",
+      "options": [
+        {"text": "It's ok. We can win next time!", "traits": {"N": 1}},
+        {"text": "Ask sunbae to collaborate on a music with you.", "traits": {"E": 1}},
+        {"text": "Do a live stream to tell your fans to inspect the point system to see if the point distribution was fair.", "traits": {"T": 1}},
+        {"text": "Go back to dorm and follow the practice schedule to try harder", "traits": {"P": 1}}
+      ]
+    }
+    
+  ]
+}
