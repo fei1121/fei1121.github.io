@@ -2,7 +2,9 @@ let gif;
 let questions;
 let currentQuestionIndex = 0;
 let scores = { "I": 0, "E": 0, "S": 0, "N": 0, "T": 0, "F": 0, "J": 0, "P": 0 };
-let colors = ['#738637', '#EDDECA', '#8AA6D1', '#F0A0C2', '#E46423', '#FFCF5C']; // Hex colors for backs
+let colors = ['#738637', '#EDDECA', '#8AA6D1', '#B7E3CC ', '#E46423', '#FFCF5C']; // Hex colors for backs
+let bgMusic = new Audio('Final.wav'); // Replace 'background_music.mp3' with the path to your background music file
+bgMusic.loop = true;
 
 function preload() {
     questions = loadJSON('question.json');
@@ -35,6 +37,7 @@ function startQuiz() {
     document.getElementById('landing-content').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'flex';
     displayQuestion(); // Proceed to show the first question
+    bgMusic.play()
 }
 function displayQuestion() {
     const container = document.getElementById('quiz-container');
@@ -78,6 +81,7 @@ function selectOption(traits, index) {
 }
 
 function displayResults() {
+    bgMusic.pause()
     // Calculate the E/I, S/N, T/F, and P/J scores
     let eScore = scores["E"];
     let iScore = scores["I"];
@@ -171,7 +175,7 @@ function displayResults() {
     // Define image paths for each quiz result
     const imagePaths = {
         "Variety Star": "variety.gif",
-        "Leader": "leader.gif",
+        "Leader": "leadercha.gif",
         "Charmer": "charmer.gif",
         "All-Rounder": "allrounder.gif",
         "maknae": "maknae.gif"// Add more paths for other results
