@@ -103,3 +103,87 @@ html, body {
     text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
     color: #FFF1F1; /* Set text color to white */
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 5px; /* Adjust font size for smaller screens */
+    }
+
+    #landing-content {
+        width: 100vw;
+        height: 100vh;
+        font-family: "VT323", monospace;
+        font-size: 30px; 
+        justify-content: center;
+        align-items: center;
+        background-image: url('consumelow.gif'); /* URL to your GIF */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        text-align: center;
+        padding: 20px;
+        text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
+        color: #8b97e2; /* Set text color to white */
+    }
+
+    #quiz-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 25px;
+    }
+
+    .quiz-button {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+        padding: 25px; /* Adjust padding for smaller screens */
+    }
+
+    .option-container {
+        border-radius: 50px; /* Rounded corners */
+        overflow: hidden; /* Ensures content fits within the borders */
+    }
+
+    #start-button {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 80px;
+        padding: 4% 3%; /* Adjust padding for smaller screens */
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    #landing-content {
+        width: 100vw;
+        height: 100vh;
+        font-family: "VT323", monospace;
+        font-size: 43px; 
+        justify-content: center;
+        align-items: center;
+        background-image: url('consumelow.gif'); /* URL to your GIF */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        text-align: center;
+        padding: 20px;
+        text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
+        color: #8b97e2; /* Set text color to white */
+    }
+
+    #quiz-container {
+        font-size: 25px;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .quiz-button {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+
+    #start-button {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 30px;
+        padding: 4% 3%; /* Adjust padding for smaller screens */
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
