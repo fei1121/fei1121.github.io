@@ -31,10 +31,10 @@
     },
     {
       "id": "pr",
-      "text": "Your group and you are ready to perform for the next come back. HOWEVER, right before the show begins, there is a scandal that broke out between you and another idol. What would you do?",
+      "text": "There is a scandal that broke out between you and another idol. What would you do?",
       "type": "single-select",
       "options": [
-        {"text": "Continue thinking about it for the whole show.", "traits": {"F": 1}},
+        {"text": "Hold a press release conference to clarify the rumour.", "traits": {"F": 1}},
         {"text": "Call your partner and initate a break up.", "traits": {"F": 1}},
         {"text": "Do a live stream before the show to calm fans down", "traits": {"E": 1}},
         {"text": "Joke about it to cover it up", "traits": {"E": 1}}
@@ -63,11 +63,11 @@
     },
     {
       "id": "music_show battle",
-      "text": "After a series of practice, you are now ready to perform in a music bank show. You found out that your group is up against a senior. You lost against your sunbae by 50 points. How would you react?",
+      "text": "After a series of practice, you are now ready to perform in a music bank show. You found out that your group is up against a senior. You lost against your senior by 50 points. How would you react?",
       "type": "single-select",
       "options": [
         {"text": "It's ok. We can win next time!", "traits": {"N": 1}},
-        {"text": "Ask sunbae to collaborate on a music with you.", "traits": {"E": 1}},
+        {"text": "Ask a senior to collaborate on a music with you.", "traits": {"E": 1}},
         {"text": "Do a live stream to tell your fans to inspect the point system to see if the point distribution was fair.", "traits": {"T": 1}},
         {"text": "Go back to dorm and follow the practice schedule to try harder", "traits": {"P": 1}}
       ]

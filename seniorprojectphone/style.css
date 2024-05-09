@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "VT323", monospace;
+    font-size: 35px; 
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cde7f3; /* Default background */
+}
+
+#quiz-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Center align the text */
+    overflow: auto; /* Enable scrolling if the content exceeds the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.option-container {
+    font-family: "VT323", monospace; 
+    width: 100%; /* Take up full width */
+    margin: 10px 0; /* Add margin for spacing between options */
+    background: #E6A8D6; /* Option background color */
+    box-shadow: 2 2px 5px rgba(198,190,190,0.2); /* Optional: add shadow for depth */
+    border-radius: 30px; /* Rounded corners */
+    overflow: hidden; /* Ensures content fits within the borders */
+}
+
+.quiz-button {
+    font-family: "VT323", monospace; 
+    font-size: 3vw;
+    display: block; /* Full width, block-level element */
+    width: 100%; /* Take up full container width */
+    padding: 20px; /* Ample padding for touch targets */
+    margin: 0; /* Reset margins */
+    background: transparent; /* No background to allow option-container styling to show */
+    color: inherit; /* Inherit text color from parent */
+    text-align: left; /* Align text to the left */
+    border: none; /* No border */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-button:hover {
+    background-color: rgba(210,206,206); /* Slight highlight on hover */
+}
+
+
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-content {
+    text-align: center;
+    padding: 20px;
+}
+
+#start-button {
+    font-size: 36px;
+    padding: 2% 5%; /* Adjust padding as needed */
+    width: 20%; /* Adjust width as needed */
+    font-family: "VT323", monospace;
+    border-radius: 40px;
+    background-color: #161506;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #F197D7;
+}
+
+
+#landing-content {
+    width: 100vw;
+    height: 100vh;
+    font-family: "VT323", monospace;
+    font-size: 50px; 
+    justify-content: center;
+    align-items: center;
+    background-image: url('consumelow.gif'); /* URL to your GIF */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    text-align: center;
+    padding: 20px;
+    text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
+    color: #FFF1F1; /* Set text color to white */
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 5px; /* Adjust font size for smaller screens */
+    }
+
+    #landing-content {
+        width: 100vw;
+        height: 100vh;
+        font-family: "VT323", monospace;
+        font-size: 30px; 
+        justify-content: center;
+        align-items: center;
+        background-image: url('consumelow.gif'); /* URL to your GIF */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        text-align: center;
+        padding: 20px;
+        text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
+        color: #8b97e2; /* Set text color to white */
+    }
+
+    #quiz-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 25px;
+    }
+
+    .quiz-button {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+        padding: 25px; /* Adjust padding for smaller screens */
+    }
+
+    .option-container {
+        border-radius: 50px; /* Rounded corners */
+        overflow: hidden; /* Ensures content fits within the borders */
+    }
+
+    #start-button {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 80px;
+        padding: 4% 3%; /* Adjust padding for smaller screens */
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    #landing-content {
+        width: 100vw;
+        height: 100vh;
+        font-family: "VT323", monospace;
+        font-size: 43px; 
+        justify-content: center;
+        align-items: center;
+        background-image: url('consumelow.gif'); /* URL to your GIF */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        text-align: center;
+        padding: 20px;
+        text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
+        color: #8b97e2; /* Set text color to white */
+    }
+
+    #quiz-container {
+        font-size: 25px;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .quiz-button {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+
+    #start-button {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 30px;
+        padding: 4% 3%; /* Adjust padding for smaller screens */
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}

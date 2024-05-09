@@ -186,7 +186,7 @@ function displayResults() {
     container.style.backgroundColor = '#FFFFFF'; 
 
     const resultText = document.createElement('h2');
-    resultText.textContent = `Your idol personality: (${quizResult})`;
+    // resultText.textContent = `Your idol personality: (${quizResult})`;
     container.appendChild(resultText);
 
     const image = document.createElement('img');
