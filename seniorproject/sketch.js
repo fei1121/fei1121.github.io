@@ -2,8 +2,8 @@ let gif;
 let questions;
 let currentQuestionIndex = 0;
 let scores = { "I": 0, "E": 0, "S": 0, "N": 0, "T": 0, "F": 0, "J": 0, "P": 0 };
-let colors = ['#738637', '#EDDECA', '#8AA6D1', '#B7E3CC ', '#E46423', '#FFCF5C']; // Hex colors for backs
-let bgMusic = new Audio('Final.wav'); // Replace 'background_music.mp3' with the path to your background music file
+let colors = ['#738637', '#EDDECA', '#8AA6D1', '#98FB98', '#E46423', '#FFCF5C']; // Hex colors for backs
+let bgMusic = new Audio('quizsong.mp3'); // Replace 'background_music.mp3' with the path to your background music file
 bgMusic.loop = true;
 
 function preload() {
@@ -81,7 +81,6 @@ function selectOption(traits, index) {
 }
 
 function displayResults() {
-    bgMusic.pause()
     // Calculate the E/I, S/N, T/F, and P/J scores
     let eScore = scores["E"];
     let iScore = scores["I"];
@@ -174,11 +173,11 @@ function displayResults() {
 
     // Define image paths for each quiz result
     const imagePaths = {
-        "Variety Star": "varietystargif.gif",
+        "Variety Star": "varietygif.gif",
         "Leader": "leadergif.gif",
         "Charmer": "charmergif.gif",
         "All-Rounder": "allroundergif.gif",
-        "maknae": "maknae.gif"// Add more paths for other results
+        "maknae": "youngest.gif"// Add more paths for other results
     };
 
     // Display the quiz result image
