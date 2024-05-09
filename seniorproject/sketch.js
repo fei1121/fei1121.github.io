@@ -174,10 +174,10 @@ function displayResults() {
 
     // Define image paths for each quiz result
     const imagePaths = {
-        "Variety Star": "variety.gif",
-        "Leader": "leadercha.gif",
-        "Charmer": "charmer.gif",
-        "All-Rounder": "allrounder.gif",
+        "Variety Star": "varietystargif.gif",
+        "Leader": "leadergif.gif",
+        "Charmer": "charmergif.gif",
+        "All-Rounder": "allroundergif.gif",
         "maknae": "maknae.gif"// Add more paths for other results
     };
 
