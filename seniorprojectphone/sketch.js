@@ -193,7 +193,7 @@ function displayResults() {
     image.src = imagePaths[quizResult]; // Get the image path based on the quiz result
     image.alt = quizResult;
     // Add CSS style to resize the image
-    image.style.width = '90%'; // Adjust the width as needed
-    image.style.height = '90%'; // Maintain aspect ratio
+    image.style.width = '100%'; // Adjust the width as needed
+    image.style.height = '100%'; // Maintain aspect ratio
     container.appendChild(image);
 }
