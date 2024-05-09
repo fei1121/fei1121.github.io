@@ -9,7 +9,7 @@
   "questions": [
     {
       "id": "creativity",
-      "text": "First thing's first you can’t debut without a hidden talent to impress fans…What will be your secret talent to impress fans?",
+      "text": "What will be your secret talent to impress fans?",
       "type": "single-select",
       "options": [
         {"text": "Voice acting of an animated character", "traits": {"N": 1}},
@@ -42,7 +42,7 @@
     },
     {
       "id": "new_song",
-      "text": "Time flies, and people start to forget but you still have to promote your group’s new songs. Who would you pick to do a challenge with?",
+      "text": "Time flies, and you have to promote your group’s new songs. Who would you pick to do a challenge with?",
       "type": "single-select",
       "options": [
         {"text": "Your group members", "traits": {"P": 1}},
@@ -52,7 +52,7 @@
     },
     {
       "id": "practice_schedule",
-      "text": "The comeback was successful and you now have to prepare for your concerts… How will you schedule your practice?",
+      "text": "The comeback was successful and you now have to start preparing. How will you schedule your practice?",
       "type": "single-select",
       "options": [
         {"text": "Once a day so you can post on social media", "traits": {"P": 1}},
