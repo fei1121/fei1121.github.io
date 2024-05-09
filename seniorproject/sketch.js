@@ -136,7 +136,7 @@ function displayResults() {
             quizResult = "Variety Star";
             break;
         case "INFP":
-            quizResult = "Charmer";
+            quizResult = "maknae";
             break;
         case "ENFJ":
             quizResult = "Charmer";
