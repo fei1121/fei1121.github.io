@@ -157,7 +157,7 @@ html, body {
         width: 100vw;
         height: 100vh;
         font-family: "VT323", monospace;
-        font-size: 43px; 
+        font-size: 35px; 
         justify-content: center;
         align-items: center;
         background-image: url('consumelow.gif'); /* URL to your GIF */
@@ -166,7 +166,7 @@ html, body {
         text-align: center;
         padding: 20px;
         text-shadow: 6px 4px 4px rgba(227,138,138,0.8); /* White text shadow */
-        color: #8b97e2; /* Set text color to white */
+        color: #764f69; /* Set text color to white */
     }
 
     #quiz-container {
